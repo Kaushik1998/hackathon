@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my page</title>
+    </head>
+<body>
+
+        <input list="browsers" id="inp" name="browser">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+        <button  onclick="myFunction()">Try it</button>
+
+<p>Click the button to make a BUTTON element with text.</p>
+
+
+<script>
+function myFunction() {
+  var btn = document.createElement("BUTTON");
+  btn.innerHTML = document.getElementById("inp").value;
+  document.body.appendChild(btn);
+}
+</script>
+
+</body>
+</html>
