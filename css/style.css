@@ -8,8 +8,11 @@
 
 /* My Editing */
 
+.button-added
+
 #alltext{
-  display: none;
+  display: none !important;
+  visibility: hidden;
 }
  #tags{
    margin: 2%;
