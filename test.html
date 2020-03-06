@@ -14,15 +14,18 @@
           <option value="Safari">
         </datalist>
         <button  onclick="myFunction()">Try it</button>
+        <textarea id="alltext"></textarea>
 
 <p>Click the button to make a BUTTON element with text.</p>
 
 
 <script>
-function myFunction() {
+function myFunction(event) {
   var btn = document.createElement("BUTTON");
   btn.innerHTML = document.getElementById("inp").value;
   document.body.appendChild(btn);
+  document.getElementById("alltext").value += btn.innerHTML;
+
 }
 </script>
 
